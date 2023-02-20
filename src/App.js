@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // layouts
 import CustomerLayout from './layouts/CustomerLayout';
-import MerchantLayout from "./layouts/MerchantLayout";
+import MCLayout from "./layouts/MCLayout";
 
 
 // merchant routes
@@ -15,6 +15,7 @@ import MCOrder from './routes/merchant/MCOrder';
 import MCOrders from './routes/merchant/MCOrders';
 import MCProduct from './routes/merchant/MCProduct';
 import MCProducts from "./routes/merchant/MCProducts";
+import MCStatistics from './routes/merchant/MCStatistics';
 import MCTransaction from "./routes/merchant/MCTransaction";
 import MCTransactions from "./routes/merchant/MCTransactions";
 
@@ -31,7 +32,7 @@ function App() {
                 </Route> } 
 
                 {/* Merchant */}
-                { !is_customer && <Route path="" element={<MerchantLayout />}>
+                { !is_customer && <Route path="" element={<MCLayout />}>
                     <Route path="/" element={<MCDashboard />} />
                     <Route path="/merchant/customers" element={<MCCustomers />} />
                     <Route path="/merchant/customer/:id" element={<MCCustomer />} />
@@ -40,7 +41,8 @@ function App() {
                     <Route path="/merchant/products" element={<MCProducts />} />
                     <Route path="/merchant/product/:id" element={<MCProduct />} />
                     <Route path="/merchant/products/add" element={<MCAddProduct />} />
-                    <Route path="/merchant/transaction" element={<MCTransaction />} />
+                    <Route path="/merchant/statistics" element={<MCStatistics />} />
+                    <Route path="/merchant/transactions" element={<MCTransaction />} />
                     <Route path="/merchant/transaction/:id" element={<MCTransactions />} />
                 </Route> }
             </Routes>

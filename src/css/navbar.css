@@ -1,0 +1,46 @@
+.app__navbar {
+    align-items: center;
+    background-color: var(--color-light);
+    display: flex;
+    height: 64px;
+    justify-content: center;
+}
+
+.app__navbar-container {
+    padding: 10px 16px;
+    width: 100%;
+}
+
+.app__navbar-row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__navbar-row_col-left {
+    align-items: center;
+    display: flex;
+}
+
+.app__navbar-row_col-left h4 {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+.app__navbar-row svg {
+    color: var(--color-dark);
+    font-size: 24px;
+}
+
+.app__navbar-menu {
+    display: none;
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .app__navbar-menu {
+        display: flex;
+    }
+}

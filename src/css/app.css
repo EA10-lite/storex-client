@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    /* colors */
+    --color-dark: hsl(252, 30%, 17%);
+    --color-light: hsl(252, 30%, 95%);
+    --color-gray: hsl(252, 15%, 65%);
+    --color-primary: hsl(252, 100%, 60%);
+    --color-secondary: hsl(252, 100%, 90%);
+    --color-success: hsl(120, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-white: #fff;
+    --color-black: hsl(252, 30%, 10%);
+
+    /* fonts */
+    --poppin: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
+    /* sizes */
+    --btn-border: 4px;
+    --text-margin: 12px;
+    --link-text: 12px;
+    --title: 36px;
+    --subtitle: 16px;
+    --icon: 24px;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: var(--poppin);
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+
+#root {
+    height: 100vh;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--color-dark);
+    font-size: var(--link-text);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app__avatar {
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+}
