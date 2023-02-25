@@ -103,10 +103,16 @@
     height: 40px;
     justify-content: center;
     outline: none;
+    transition: all 300ms ease-in-out;
     width: 40px;
 }
 
 .app__view-btn.active {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+}
+
+.app__view-btn:hover {
     background-color: var(--color-dark);
     color: var(--color-white);
 }

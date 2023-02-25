@@ -2,6 +2,7 @@
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(1, 1fr);
+    transition: all 300ms ease-in-out;
 }
 
 /* customer grid */

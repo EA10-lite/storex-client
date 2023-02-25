@@ -53,7 +53,7 @@ const customers  = [
         id:'ACG76MDG',
         customColor:'skyblue',
         name: 'Ridwan Mohammed',
-        image: customer4,
+        image: customer2,
         phoneNumber: '09011955259',
         email:'ridwantolani2002@gmail.com',
         state: 'Ekiti',
