@@ -15,7 +15,8 @@
 }
 
 .app__layout-row__col-left {
-    background-color: var(--color-light);
+    background-color: var(--color-white);
+    border-right: 1px solid var(--color-gray);
     height: 100%;
     overflow: auto;
     transition: all 250ms ease-in-out;
@@ -40,8 +41,12 @@
 }
 
 .app__layout-navbar {
+    background-color: var(--color-white);
     border-left: 1px solid var(--color-white);
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--color-gray);
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,0 +1,89 @@
+.app__table-section {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 44px rgba(44, 60, 144, 0.13);
+    margin-top: 24px;
+    overflow: hidden;
+    padding: 24px;
+    width: 100%;
+}
+
+.app__table::-webkit-scrollbar{
+    /* display: none; */
+}
+
+.app__table {
+    border-collapse: collapse;
+    cursor: pointer;
+    overflow: scroll;
+    width: 100%;
+}
+
+.app__table tr {
+    padding: 6px 16px;
+}
+
+.app__table th {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 12px ;
+    text-align: left;
+}
+
+.app__table td {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px ;
+}
+
+.app__table td div {
+    align-items: center;
+    display: flex;
+}
+
+.app__table td div span {
+    margin-left: 8px;
+}
+
+.app__table td div img {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.app__table-header {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.app__table-view {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+/*  */
+.app__table-head tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* table body */
+.app__table-body tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.app__table-body tr:last-child {
+    border-bottom: none;
+}
+
+.app__table-body tr:hover {
+    background-color: #F8F8F4;
+    color:black;
+  }
+
+
+th.app__table-head_center, .app__table-body_center {
+    text-align: center;
+}

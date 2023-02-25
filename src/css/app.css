@@ -32,7 +32,8 @@
 }
 
 body {
-    background-color: var(--color-white);
+    background-color: var(--color-light);
+    background-color: #FAFAF8;
     font-family: var(--poppin);
     height: 100%;
     overflow: auto;
@@ -46,6 +47,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 p {
+    color: var(--color-dark);
     margin: 0;
     padding: 0;
 }
@@ -60,10 +62,4 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.app__avatar {
-    border-radius: 50%;
-    height: 36px;
-    width: 36px;
 }

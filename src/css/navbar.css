@@ -1,6 +1,5 @@
 .app__navbar {
     align-items: center;
-    background-color: var(--color-light);
     display: flex;
     height: 64px;
     justify-content: center;
